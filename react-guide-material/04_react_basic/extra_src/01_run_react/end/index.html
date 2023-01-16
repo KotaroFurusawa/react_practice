@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        // POINT ReactをHTMLにマウントする書き方
+        const appEl = document.querySelector('#app');
+        const root = ReactDOM.createRoot(appEl);
+        root.render(<h1>こんにちは</h1>);
+        
+        // POINT React18以前の書き方
+        // ReactDOM.render(<h1>こんにちは</h1>, appEl)
+    </script>
+</body>
+</html>
